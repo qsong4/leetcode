@@ -19,7 +19,7 @@ public class SingleNumber {
 
     public static void main(String[] args){
         int a;
-        int[] b = {1,1,2,2,8,8,3};
+        int[] b = {1,1,2,2,8,8,9};
         a = singleNumber(b);
         System.out.print(a);
     }
