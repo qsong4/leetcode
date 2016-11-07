@@ -25,10 +25,10 @@ public class FizzBuzz {
         return result;
     }
 
-//    public static void main(String[] args){
-//        List<String> re;
-//        int n = 15;
-//        re = fizzBuzz(n);
-//        System.out.print(re);
-//    }
+    public static void main(String[] args){
+        List<String> re;
+        int n = 15;
+        re = fizzBuzz(n);
+        System.out.print(re);
+    }
 }
