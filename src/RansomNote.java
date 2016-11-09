@@ -17,7 +17,7 @@ public class RansomNote {
         return true;
     }
 
-    public static void main(String[] args){
-       System.out.print(canConstruct("aa", "aab"));
-    }
+//    public static void main(String[] args){
+//       System.out.print(canConstruct("aa", "aab"));
+//    }
 }
