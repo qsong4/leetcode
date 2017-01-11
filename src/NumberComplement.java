@@ -15,6 +15,7 @@ public class NumberComplement {
             }
         }
 
+
         for(int i=aaa.length-1;i>=0;i--){
             if(aaa[i]!=0){
                 ret = (int)(ret + Math.pow(2, aaa.length-i-1));
