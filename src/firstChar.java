@@ -25,13 +25,12 @@ public class firstChar {
             }
         }
 
-        for(Object obj : m.keySet()){
+        for(Object obj : m.keySet()) {
             int value = Integer.parseInt(String.valueOf(m.get(obj)));
-            if(value==0){
+            if (value == 0) {
                 set.add(obj);
             }
         }
-
         for(int i=0;i<str.length;i++){
             if(set.contains(str[i])){
                 return i;
