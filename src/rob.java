@@ -2,6 +2,10 @@
  * Created by songqingyuan on 1/15/17.
  */
 public class rob {
+
+    public static void main(String[] arg){
+        System.out.print(Integer.toString(16, 3));
+    }
     public int rob(int[] nums) {
         int robCurPre = 0;
         int notrobCurPre =0;
