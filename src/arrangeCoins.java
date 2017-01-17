@@ -1,6 +1,11 @@
 /**
  * Created by songqingyuan on 1/17/17.
  */
+
+/**
+ * sum = (x + 1) * x / 2
+ * x = (-1 + sqrt(8 * n + 1)) / 2
+ */
 public class arrangeCoins {
     public int arrangeCoins(int n) {
         int a = 1;
