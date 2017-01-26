@@ -1,7 +1,12 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
  * Created by songqingyuan on 1/26/17.
  */
 public class mergeSorted {
+    Queue<Integer> queue = new LinkedList<>();
+
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int k = m+n-1;
         int i = m-1;
