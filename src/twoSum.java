@@ -1,6 +1,7 @@
 /**
  * Created by songqingyuan on 1/30/17.
  */
+import java.util.*;
 public class twoSum {
     public int[] twoSum(int[] nums, int target) {
         int[] result = new int[2];
