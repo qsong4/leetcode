@@ -5,38 +5,38 @@ package Medium;
  */
 public class Solution {
 
-    public static int count;
-    public int[] id;
-    public Solution(int n){
-        count = n;
-        id = new int[n];
-        for (int i = 0; i < n; i++) {
-            id[i] = i;
-        }
-    }
 
-    public int find(int p){
-        return id[p];
-    }
+    public int count=0;
+    public static int[] root;
 
-    public void union(int p, int q){
-        if(id[p]==id[q]) return;
-        for(int i=0;i<id.length;i++){
-            if(id[i]==id[p]){
-                id[i]=q;
-            }
+
+    public static void union(int p, int q){
+        while(root[p]!=p) p = root[p];
+        while(root[q]!=q) q = root[q];
+        if(p!=q){
+            root[q] = p;
         }
-        count--;
     }
 
     public static int findCircleNum(int[][] M) {
         int n = M.length;
-        Solution uf = new Solution(n);
+        root = new int[n];
+        for (int i = 0; i < n; i++) {
+            root[i] = i;
+        }
+
         for (int i = 0; i < n - 1; i++) {
             for (int j = i + 1; j < n; j++) {
-                if (M[i][j] == 1) uf.union(i, j);
+                if (M[i][j] == 1) union(i, j);
             }
         }
+
+        int count=0;
+        for(int i =0;i<root.length;i++){
+            if(i==root[i]) count++;
+        }
+
+
         return count;
     }
     public static void main(String[] args){
