@@ -16,6 +16,6 @@ public class predictWinner {
                 int j = i + len;
                 dp[i][j] = Math.max(nums[i] - dp[i + 1][j], nums[j] - dp[i][j - 1]);
             }        }
-        return dp[0][n-1]>0;
+        return dp[0][n-1]>=0;
     }
 }
